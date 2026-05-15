@@ -2,6 +2,11 @@
 RootHawk 是一个 Linux 本地安全测试终端工具，用 Go 编写，面向授权靶机、虚拟机和实验环境。
 
 ## 效果展示
+
+## 信创系统
+openEuler
+<img width="833" height="720" alt="image" src="https://github.com/user-attachments/assets/d78ddc6b-26e5-4026-90d0-b8e9ad69c654" />
+
 ### DirtyFrag
 ```bash
 ./RootHawk-amd64 -e CVE-2026-43284
