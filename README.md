@@ -2,6 +2,12 @@
 
 RootHawk 是一个 Linux 本地安全测试终端工具，用 Go 编写，面向授权靶机、虚拟机和实验环境。
 
+## 成功展示
+```bash
+./RootHawk -e CVE-2026-43284+CVE-2026-43500
+```
+<img width="714" height="440" alt="image" src="https://github.com/user-attachments/assets/f4a5a64c-837d-4029-98d1-3797016a83c4" />
+
 ## 目录结构
 
 ```text
@@ -106,9 +112,3 @@ chmod +x RootHawk-amd64
 ./RootHawk-amd64 -e CVE-2026-43284 -v
 ./RootHawk-amd64 -any
 ```
-
-## 注意事项
-
-- 仅在你有授权的环境中使用。
-- `CVE-2026-43284` 和 `CVE-2021-4034` 模块运行时会在目标 Linux 上调用 `gcc` 或 `cc` 编译对应的 C 文件，目标机需要安装编译器。
-- 运行会修改系统状态的模块后，建议在快照环境中测试，或按输出提示恢复/重启。
