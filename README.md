@@ -1,7 +1,15 @@
 # RootHawk
 RootHawk 是一个 Linux 本地安全测试终端工具，用 Go 编写，面向授权靶机、虚拟机和实验环境。
 
-## 效果展示
+## 工具测试
+| 序号 | 操作系统 | 测试漏洞 | 测试结果 | 说明 |
+|---|---|---|---|---|
+| 1 | AnolisOS | CVE-2026-31431 / Copy Fail | 提权成功 | 工具在该系统环境下测试通过 |
+| 2 | openEuler | CVE-2026-31431 / Copy Fail | 提权成功 | 工具在该系统环境下测试通过 |
+| 3 | 统信 UOS | CVE-2026-31431 / Copy Fail | 提权成功 | 工具在该系统环境下测试通过 |
+| 4 | openKylin | CVE-2026-31431 / Copy Fail | 提权成功 | 工具在该系统环境下测试通过 |
+| 5 | Ubuntu | CVE-2026-31431 / Copy Fail | 提权成功 | 工具在该系统环境下测试通过 |
+| 6 | CentOS 7 | CVE-2021-4034 / PwnKit | 提权成功 | 工具在该系统环境下测试通过 |
 
 ### 信创系统openEuler
 <img width="833" height="720" alt="image" src="https://github.com/user-attachments/assets/d78ddc6b-26e5-4026-90d0-b8e9ad69c654" />
