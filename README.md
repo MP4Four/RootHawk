@@ -61,6 +61,15 @@ RootHawk/
 └── README.md
 ```
 
+## Build
+```shell
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -ldflags="-s -w" -o roothawk .
+CGO_ENABLED=0 go build -trimpath -ldflags="-s -w -extldflags '-static'" -o exploit_tool main.go
+
+# Ubuntu/Debian 上需要先安装: sudo apt install gcc-x86-64-linux-gnu
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 CC=x86_64-linux-gnu-gcc go build -trimpath -ldflags="-s -w -extldflags '-static'" -o exploit_tool_linux roothawk.go
+```
+
 ## 已编译版本
 
 ```text
